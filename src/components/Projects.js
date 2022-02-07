@@ -62,22 +62,18 @@ export default function Projects () {
                 <Row style={{paddingTop: '2%'}}>
                     <Col/>
                     <Col xs={5}>
-                        <h3 style={{color: '#DBADB1'}}>Resume Database</h3>
+                        <h3 style={{color: '#DBADB1'}}>Sorting Visualizer</h3>
                         <h5 style={{lineHeight: "1.5"}}>
-                            A progressive web application created by myself in a group of
-                            five in a capstone course. Made for the Virginia Tech Computer
-                            Science department to connect recruiters with students based on
-                            desirable skills. The project consists of two seperate websites;
-                            one used by recruiters via their work emails, and the other used 
-                            by students and administrators using the CAS login system. The 
-                            application uses React (Javascript) for the frontend and Django 
-                            (python) for the backend.
+                            One of my earlier personal projects I created to visualize the numerous 
+                            sorting algorithms I learned in my Data Structures and Algorithms course.
+                            I created this to familiarize myself with React (using Javascript) as well as
+                            brushing up on my CSS skills.
                         </h5>
 
                         <br/>
 
-                        <Button onClick={() => window.open('https://manav-ray.github.io/shortest-path-finder/', '_blank')} className="btn">View It Here</Button>
-                        <Button onClick={() => window.open('https://github.com/manav-ray/shortest-path-finder', '_blank')} style={{marginLeft: '15px'}} className="btn">Github Repo</Button>
+                        <Button onClick={() => window.open('https://manav-ray.github.io/sorting-visualizer/', '_blank')} className="btn">View It Here</Button>
+                        <Button onClick={() => window.open('https://github.com/manav-ray/sorting-visualizer', '_blank')} style={{marginLeft: '15px'}} className="btn">Github Repo</Button>
                     </Col>
                     <Col>
                         <img src={sorting} alt="ResumeDB Mockup" style={{height: '450px', width: 'auto'}}/>
