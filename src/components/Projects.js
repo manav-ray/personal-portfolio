@@ -5,7 +5,7 @@ export default function Projects () {
 
     const resumedb = require('./../styling/mockups/resumedb.png')
     const visualizer = require('./../styling/mockups/visualizer.png')
-    const sorting = require('./../styling/mockups/sort-visualizer.png')
+    const sorting = require('./../styling/mockups/sorting-visualizer.png')
 
     return (
         <div className="light-container">
@@ -39,7 +39,7 @@ export default function Projects () {
                 <Row style={{paddingTop: '2%'}}>
                     <Col/>
                     <Col>
-                        <img src={visualizer} alt="ResumeDB Mockup" style={{height: '350px', width: 'auto'}}/>
+                        <img src={visualizer} alt="Pathfinding Mockup" style={{height: '350px', width: 'auto'}}/>
                     </Col>
                     <Col xs={5}>
                         <h3 style={{color: '#DBADB1'}}>Path finding visualizer</h3>
@@ -76,7 +76,7 @@ export default function Projects () {
                         <Button onClick={() => window.open('https://github.com/manav-ray/sorting-visualizer', '_blank')} style={{marginLeft: '15px'}} className="btn">Github Repo</Button>
                     </Col>
                     <Col>
-                        <img src={sorting} alt="ResumeDB Mockup" style={{height: '450px', width: 'auto'}}/>
+                    <img src={sorting} alt="Sorting Mockup" style={{height: '390px', width: 'auto'}}/>
                     </Col>
                 </Row>
                 
