@@ -47,57 +47,111 @@ export default function Contact () {
     }
 
     return (
-        <div className="dark-container">
-                <Container style={{paddingTop: '5%', paddingBottom: '5%'}}>
-                    <Row>
-                        <Col>
-                            <h3 style={{paddingBottom: '5%'}}>Contact Me</h3>
+        <>
+            {window.innerWidth > 800 ?
+                <div className="dark-container">
+                        <Container style={{paddingTop: '5%', paddingBottom: '5%'}}>
+                            <Row>
+                                <Col>
+                                    <h3 style={{paddingBottom: '5%'}}>Contact Me</h3>
 
-                            {isValid && message !== "" ?
-                                <Alert variant="success">
-                                    {message}
-                                </Alert>
-                                :
-                                <>
-                                </>
-                            }
+                                    {isValid && message !== "" ?
+                                        <Alert variant="success">
+                                            {message}
+                                        </Alert>
+                                        :
+                                        <>
+                                        </>
+                                    }
 
-                            {!isValid && message !== "" ?
-                                <Alert variant="danger">
-                                    {message}
-                                </Alert>
-                                :
-                                <>
-                                </>
-                            }
-                            
-                            <Form>
-                            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                                <Form.Label>Name</Form.Label>
-                                <Form.Control type="text" ref={nameRef} />
-                            </Form.Group>
-                            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                                <Form.Label>Email address</Form.Label>
-                                <Form.Control type="email" placeholder="name@example.com" ref={emailRef} />
-                            </Form.Group>
-                            <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-                                <Form.Label>Message</Form.Label>
-                                <Form.Control as="textarea" rows={3} ref={messageRef} />
-                            </Form.Group>
-                            <Button className="btn" onClick={handleSubmit}>Submit</Button>
-                            </Form>
+                                    {!isValid && message !== "" ?
+                                        <Alert variant="danger">
+                                            {message}
+                                        </Alert>
+                                        :
+                                        <>
+                                        </>
+                                    }
+                                    
+                                    <Form>
+                                    <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+                                        <Form.Label>Name</Form.Label>
+                                        <Form.Control type="text" ref={nameRef} />
+                                    </Form.Group>
+                                    <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+                                        <Form.Label>Email address</Form.Label>
+                                        <Form.Control type="email" placeholder="name@example.com" ref={emailRef} />
+                                    </Form.Group>
+                                    <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+                                        <Form.Label>Message</Form.Label>
+                                        <Form.Control as="textarea" rows={3} ref={messageRef} />
+                                    </Form.Group>
+                                    <Button className="btn" onClick={handleSubmit}>Submit</Button>
+                                    </Form>
 
-                        </Col>
+                                </Col>
 
-                        <Col style={{textAlign: 'center'}}>
-                            <h4 style={{paddingTop: '20%', paddingBottom: '2%'}}>Check me out on my socials!</h4>
-                            <InstagramIcon onClick={() => window.open('https://www.instagram.com/manav_ray/?hl=en', '_blank')} className="svg" style={{marginRight: '30px'}} />
-                            <TwitterIcon onClick={() => window.open('https://twitter.com/ray_manav', '_blank')} className="svg" style={{marginRight: '30px'}} />
-                            <GitHubIcon onClick={() => window.open('https://github.com/manav-ray', '_blank')} className="svg" style={{marginRight: '30px'}} />
-                            <LinkedInIcon onClick={() => window.open('https://www.linkedin.com/in/manav-r-760a39156/', '_blank')} className="svg" />
-                        </Col>
-                    </Row>
-                </Container>
-        </div>
+                                <Col style={{textAlign: 'center'}}>
+                                    <h4 style={{paddingTop: '20%', paddingBottom: '2%'}}>Check me out on my socials!</h4>
+                                    <InstagramIcon onClick={() => window.open('https://www.instagram.com/manav_ray/?hl=en', '_blank')} className="svg" style={{marginRight: '30px'}} />
+                                    <TwitterIcon onClick={() => window.open('https://twitter.com/ray_manav', '_blank')} className="svg" style={{marginRight: '30px'}} />
+                                    <GitHubIcon onClick={() => window.open('https://github.com/manav-ray', '_blank')} className="svg" style={{marginRight: '30px'}} />
+                                    <LinkedInIcon onClick={() => window.open('https://www.linkedin.com/in/manav-r-760a39156/', '_blank')} className="svg" />
+                                </Col>
+                            </Row>
+                        </Container>
+                </div>
+            :
+                <div className="dark-container">
+                    <Container style={{paddingTop: '5%', paddingBottom: '5%'}}>
+                        <Row>
+                                <h3 style={{paddingBottom: '5%'}}>Contact Me</h3>
+
+                                {isValid && message !== "" ?
+                                    <Alert variant="success">
+                                        {message}
+                                    </Alert>
+                                    :
+                                    <>
+                                    </>
+                                }
+
+                                {!isValid && message !== "" ?
+                                    <Alert variant="danger">
+                                        {message}
+                                    </Alert>
+                                    :
+                                    <>
+                                    </>
+                                }
+                                
+                                <Form>
+                                <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+                                    <Form.Label>Name</Form.Label>
+                                    <Form.Control type="text" ref={nameRef} />
+                                </Form.Group>
+                                <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+                                    <Form.Label>Email address</Form.Label>
+                                    <Form.Control type="email" placeholder="name@example.com" ref={emailRef} />
+                                </Form.Group>
+                                <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+                                    <Form.Label>Message</Form.Label>
+                                    <Form.Control as="textarea" rows={3} ref={messageRef} />
+                                </Form.Group>
+                                <Button className="btn" onClick={handleSubmit}>Submit</Button>
+                                </Form>
+
+                        </Row>
+
+                        <Row style={{paddingTop: '10%'}}>
+                            <InstagramIcon onClick={() => window.open('https://www.instagram.com/manav_ray/?hl=en', '_blank')} className="svg" style={{height: 'auto', width: '15%', marginLeft: '7%',  marginRight: '30px'}} />
+                            <TwitterIcon onClick={() => window.open('https://twitter.com/ray_manav', '_blank')} className="svg" style={{height: 'auto', width: '15%', marginRight: '30px'}} />
+                            <GitHubIcon onClick={() => window.open('https://github.com/manav-ray', '_blank')} className="svg" style={{height: 'auto', width: '15%', marginRight: '30px'}} />
+                            <LinkedInIcon onClick={() => window.open('https://www.linkedin.com/in/manav-r-760a39156/', '_blank')} style={{height: 'auto', width: '15%'}} className="svg" />
+                        </Row>
+                    </Container>
+                </div>
+            }
+        </>
     )
 }

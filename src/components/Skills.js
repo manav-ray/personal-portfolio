@@ -21,95 +21,227 @@ export default function Skills () {
 
 
     return (
-        <div>
-            <Container style={{paddingTop: '5%'}}>
-                <Row>
-                    <Col>
-                        <h3>Skills and Tools</h3>
-                    </Col>
-                </Row>
+        <>
+            {window.innerWidth > 800 ?
+                <div>
+                    <Container style={{paddingTop: '5%'}}>
+                        <Row>
+                            <Col>
+                                <h3>Skills and Tools</h3>
+                            </Col>
+                        </Row>
 
-                <Row style={{paddingTop: '2%', textAlign: 'center'}}>
-                    <Col/>
-                    <Col/>
+                        <Row style={{paddingTop: '2%', textAlign: 'center'}}>
+                            <Col/>
+                            <Col/>
 
-                    <Col>
-                        <img src={python} alt="python"/>
-                        <p>Python</p>
-                    </Col>
-                    <Col>
-                        <img src={java} alt="java"/>
-                        <p>Java</p>
-                    </Col>
-                    <Col>
-                        <img src={c} alt="c"/>
-                        <p>C</p>
-                    </Col>
-                    <Col>
-                        <img src={kotlin} alt="kotlin"/>
-                        <p>Kotlin</p>
-                    </Col>
-                    <Col>
-                        <img src={javascript} alt="js"/>
-                        <p>JavaScript</p>
-                    </Col>
-                    <Col>
-                        <img src={matlab} alt="matlab"/>
-                        <p>MatLab</p>
-                    </Col>
-                    <Col>
-                        <img src={css} alt="css"/>
-                        <p>CSS</p>
-                    </Col>
+                            <Col>
+                                <img src={python} alt="python"/>
+                                <p>Python</p>
+                            </Col>
+                            <Col>
+                                <img src={java} alt="java"/>
+                                <p>Java</p>
+                            </Col>
+                            <Col>
+                                <img src={c} alt="c"/>
+                                <p>C</p>
+                            </Col>
+                            <Col>
+                                <img src={kotlin} alt="kotlin"/>
+                                <p>Kotlin</p>
+                            </Col>
+                            <Col>
+                                <img src={javascript} alt="js"/>
+                                <p>JavaScript</p>
+                            </Col>
+                            <Col>
+                                <img src={matlab} alt="matlab"/>
+                                <p>MatLab</p>
+                            </Col>
+                            <Col>
+                                <img src={css} alt="css"/>
+                                <p>CSS</p>
+                            </Col>
 
-                    <Col/>
-                    <Col/>
+                            <Col/>
+                            <Col/>
 
-                </Row>
+                        </Row>
 
-                <Row style={{paddingTop: '2%', textAlign: 'center'}}>
-                    <Col/>
-                    <Col/>
+                        <Row style={{paddingTop: '2%', textAlign: 'center'}}>
+                            <Col/>
+                            <Col/>
 
-                    <Col>
-                        <img src={firebase} alt="firebase"/>
-                        <p>Firebase</p>
-                    </Col>
-                    <Col>
-                        <img src={django} alt="dj"/>
-                        <p>Django</p>
-                    </Col>
-                    <Col>
-                        <img src={oracle} alt="oracle"/>
-                        <p>Oracle</p>
-                    </Col>
-                    <Col>
-                        <img src={react} alt="react"/>
-                        <p>React</p>
-                    </Col>
-                    <Col>
-                        <img src={sql} alt="react"/>
-                        <p>SQL</p>
-                    </Col>
-                    <Col>
-                        <img src={aws} alt="aws"/>
-                        <p>AWS</p>
-                    </Col>
-                    <Col>
-                        <img src={git} alt="git"/>
-                        <p>Git</p>
-                    </Col>
+                            <Col>
+                                <img src={firebase} alt="firebase"/>
+                                <p>Firebase</p>
+                            </Col>
+                            <Col>
+                                <img src={django} alt="dj"/>
+                                <p>Django</p>
+                            </Col>
+                            <Col>
+                                <img src={oracle} alt="oracle"/>
+                                <p>Oracle</p>
+                            </Col>
+                            <Col>
+                                <img src={react} alt="react"/>
+                                <p>React</p>
+                            </Col>
+                            <Col>
+                                <img src={sql} alt="react"/>
+                                <p>SQL</p>
+                            </Col>
+                            <Col>
+                                <img src={aws} alt="aws"/>
+                                <p>AWS</p>
+                            </Col>
+                            <Col>
+                                <img src={git} alt="git"/>
+                                <p>Git</p>
+                            </Col>
 
-                    <Col/>
-                    <Col/>
+                            <Col/>
+                            <Col/>
 
-                </Row>
-            </Container>
+                        </Row>
+                    </Container>
 
-            <div className="center">
-                <Button style={{marginBottom: '4%', marginTop: '2%'}} onClick={() => window.open('https://docs.google.com/document/d/1443PhxjnpuwznG3_-XhUqxDnJylSEbscBh0XsE33WhM/edit?usp=sharing', '_blank')} className="btn">Resume</Button>
-            </div>
-            <div class="slanted-white"/>
-        </div>
+                    <div className="center">
+                        <Button style={{marginBottom: '4%', marginTop: '2%'}} onClick={() => window.open('https://docs.google.com/document/d/1443PhxjnpuwznG3_-XhUqxDnJylSEbscBh0XsE33WhM/edit?usp=sharing', '_blank')} className="btn">Resume</Button>
+                    </div>
+                    <div className="slanted-white"/>
+                </div>
+            :
+                <div>
+                    <Container style={{paddingTop: '5%'}}>
+                        <Row>
+                            <Col>
+                                <h3>Skills and Tools</h3>
+                            </Col>
+                        </Row>
+
+                        <Row style={{paddingTop: '2%', textAlign: 'center'}}>
+                            <Col/>
+                            <Col/>
+
+                            <Col>
+                                <img src={python} alt="python"/>
+                                <p>Python</p>
+                            </Col>
+                            <Col>
+                                <img src={java} alt="java"/>
+                                <p>Java</p>
+                            </Col>
+                            <Col>
+                                <img src={c} alt="c"/>
+                                <p>C</p>
+                            </Col>
+        
+
+                            <Col/>
+                            <Col/>
+
+                        </Row>
+
+                        <Row style={{paddingTop: '2%', textAlign: 'center'}}>
+                            <Col/>
+                            <Col/>
+
+                            <Col>
+                                <img src={kotlin} alt="kotlin"/>
+                                <p>Kotlin</p>
+                            </Col>
+                            <Col>
+                                <img src={javascript} alt="js"/>
+                                <p>JavaScript</p>
+                            </Col>
+                            <Col>
+                                <img src={matlab} alt="matlab"/>
+                                <p>MatLab</p>
+                            </Col>
+        
+
+                            <Col/>
+                            <Col/>
+
+                        </Row>
+
+                        <Row style={{paddingTop: '2%', textAlign: 'center'}}>
+                            <Col/>
+                            <Col/>
+
+                            <Col>
+                                <img src={css} alt="css"/>
+                                <p>CSS</p>
+                            </Col>
+                            <Col>
+                                <img src={firebase} alt="firebase"/>
+                                <p>Firebase</p>
+                            </Col>
+                            <Col>
+                                <img src={django} alt="dj"/>
+                                <p>Django</p>
+                            </Col>
+        
+
+                            <Col/>
+                            <Col/>
+
+                        </Row>
+
+                        <Row style={{paddingTop: '2%', textAlign: 'center'}}>
+                            <Col/>
+                            <Col/>
+
+                            <Col>
+                                <img src={oracle} alt="oracle"/>
+                                <p>Oracle</p>
+                            </Col>
+                            <Col>
+                                <img src={react} alt="react"/>
+                                <p>React</p>
+                            </Col>
+                            <Col>
+                                <img src={sql} alt="react"/>
+                                <p>SQL</p>
+                            </Col>
+        
+
+                            <Col/>
+                            <Col/>
+
+                        </Row>
+
+                        <Row style={{paddingTop: '2%', textAlign: 'center'}}>
+                            <Col/>
+                            <Col/>
+
+                            <Col>
+                                <img src={aws} alt="aws"/>
+                                <p>AWS</p>
+                            </Col>
+                            <Col>
+                                <img src={git} alt="git"/>
+                                <p>Git</p>
+                            </Col>
+        
+
+                            <Col/>
+                            <Col/>
+
+                        </Row>
+
+
+                    </Container>
+
+                    <div className="center">
+                        <Button style={{marginBottom: '4%', marginTop: '2%'}} onClick={() => window.open('https://docs.google.com/document/d/1443PhxjnpuwznG3_-XhUqxDnJylSEbscBh0XsE33WhM/edit?usp=sharing', '_blank')} className="btn">Resume</Button>
+                    </div>
+                    <div className="slanted-white"/>
+                </div>
+            }
+        </>
     )
 }
